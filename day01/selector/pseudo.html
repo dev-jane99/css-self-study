@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가상요소 선택자</title>
+  <style>
+    /* a:visited {
+      color: pink;
+    }
+
+    a:active {
+      background-color: black; color: white;
+    }
+
+    a:hover {
+      background-color: lightgray;
+    } */
+
+    a::before{
+      display: black;
+      width: 40px;
+      height: 40px;
+      content: '1';
+      background-color: aquamarine;
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+   가상 클래스(:) 
+   -가상 요소를 선택하는것
+   1) :link - 방문한 적이 없는 링크
+   2) :visited - 방문한 적이 있는 링크
+   3) :hover - 마우스를 롤 오버 했을떄
+   4) :active - 마우스를 클릭했을때
+
+   가상 요소(::)
+   - 가상 요소를 추가하는것
+   - 가상요소에 내용을 추가하고 싶다면 content:'' 속성을 이용해야한다. 
+   1) ::before
+   2) ::after
+   -->
+
+   <!-- <a href="https://www.naver.com">네이버로 이동</a>
+   <a href="https://www.kakaocrop.com/page/">카카오로 이동</a> -->
+   <a href="https://www.kakaocrop.com/page/">카카오로 이동</a>
+   <!-- <img src="./images/clothes.png" alt="의류">.... 안되네유 -->
+
+</body>
+</html>
