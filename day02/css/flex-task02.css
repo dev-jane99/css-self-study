@@ -1,0 +1,42 @@
+/* #border {
+  display: flex;
+  border: solid 3px black;
+  width: 400px;
+  padding: 20px;
+}
+
+#flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  min-width: 400px;
+  gap: 10px;
+}
+
+.box {
+  width: calc(200px - 5px);
+  height: 100px;
+  background-color: orangered;
+} */
+
+/* width를 주지 않으려고 */
+#border {
+  display: inline-flex;
+  border: solid 3px black;
+  padding: 20px;
+}
+
+#flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  min-width: 400px;
+  gap: 10px;
+}
+
+.box {
+  width: calc(200px - 5px);
+  height: 100px;
+  background-color: orangered;
+} 
+

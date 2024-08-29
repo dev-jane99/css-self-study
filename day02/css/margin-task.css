@@ -1,0 +1,8 @@
+#container {
+  width: 600px;
+  height: 600px;
+  border: solid 3px pink;
+  box-sizing: border-box;
+  padding: 30px 60px;
+  margin: 20px 60px 10px 50px;
+}

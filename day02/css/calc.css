@@ -1,0 +1,26 @@
+#view {
+  /* (부모의 크기) %, vh, vw, (동적크기)dvw, dvh */
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  height: 100vh;
+  background-color: blanchedalmond;
+}
+
+/* min()  max() */
+  /* 최대크기를 고정 */
+  /* max-width */
+/* #container {
+  width: min(50%, 500px);
+  height: 200px;
+  background-color: pink;
+} */
+
+
+  /* 최소크기를 고정 */
+  /* mix-width */
+#container {
+  width: max-width(50%, 500px);
+  height: 200px;
+  background-color: pink;
+}
+
