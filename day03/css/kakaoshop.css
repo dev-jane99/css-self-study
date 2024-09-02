@@ -21,41 +21,10 @@ input,select{vertical-align:middle}
   justify-content: center;
 }
 
-#head-content {
-  width: 1280px;
-  height: 480px;
-  justify-content: center;
+#headline {
+  flex-direction: column;
 }
 
-#title {
-  font-weight: 300;
-}
-
-#container #product-wrap {
-  display: flex;
-  flex-direction: row;
-}
-
-#product > img {
-  width: 150px;
-  height: 150px;
-  margin: 10px 5px;
-  border: 5px solid rgba(0, 0, 0, .03);
-  border-radius: 10%;
-  background-color: rgba(0, 0, 0, .02);
-}
-
-ul {
-  list-style: none;
-}
-
-.price {
-  font-weight: 600;
-}
-
-.sold {
-  border-radius: 10%;
-  background-color: rgba(0, 0, 0, .04);
-  margin: 0 auto;
-  padding: 10px;
+#container #banner {
+  flex-direction: column;
 }

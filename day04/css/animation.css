@@ -1,0 +1,26 @@
+/* 애니메이션 선언 */
+.white {
+  width: 400px;
+  animation: white-move 2s forwards;
+}
+
+p {
+  animation: fade-in 1s;
+}
+
+  /* 1번 방법 */
+@keyframes white-move {
+  from{transform: translate(0, 0);}
+  to{transform: translate(500px, 0);}
+}
+
+/* 2번 방법 */
+@keyframes fade-in {
+  0%{transform: translate(0, 40px);
+  opacity: 0;
+  }
+  /* 50%{} */
+  100%{transform: translate(0, 0);
+  opacity: 1;
+  }
+}

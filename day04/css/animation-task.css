@@ -1,0 +1,20 @@
+.star {
+  animation: star-move 1s infinite;
+}
+
+@keyframes star-move {
+  0%{transform: translate(0, 0);
+  opacity: 0;
+  }
+  100%{transform: translate(0, 0);
+  opacity: 1;
+  }
+}
+
+.circle {
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color:mediumpurple;
+}
