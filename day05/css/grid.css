@@ -1,0 +1,20 @@
+#grid-wraper {
+  display: grid;
+  grid-template:
+  "a a a a" 100px
+  "b b c c" 100px
+  "d e f g" 100px
+  / 100px 100px 100px 100px;
+  gap: 4px;
+}
+
+.box {
+  background-color:lightcoral;
+}
+.box:nth-child(1) {
+  background-color:lightblue;
+  grid-area: a;
+}
+.box:nth-child(7) {
+  background-color:rosybrown;
+}
