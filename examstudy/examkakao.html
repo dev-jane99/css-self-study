@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="./css/examkakao.css">
     <link rel="icon" href="https://st.kakaocdn.net/shoppingstore/static/common/store/shopping_32x32.ico">
     <title>카카오톡 쇼핑하기</title>
+    <style>
+    input:focus {
+      outline: none;
+    }
+    </style>
 </head>
 <body>
     <div id="wrap-all">
@@ -58,77 +63,81 @@
                 <ul>
                     <li>
                         <p class="name">다람쥐 바디 필로우_춘식이</p>
-                    </li>
+                    </li></a>
                     <li>
                         <p class="price">49,000원</p>
                     </li>
                     <li>
-                        <p class="sold">구매 7</p>
+                        <div class="sold-delivery">
+                          <p class="sold">구매 16</p><p class="delivery">무료배송</p>
+                        </div>
                     </li>
-                </ul></a>
+                </ul>
             </div>
             <div class="products">
                 <a href="https://store.kakao.com/kakaofriends/products/411145861"><img src="https://st.kakaocdn.net/shoppingstore/product/20240905102854_0353671c09554742990e1492d6154d28.jpg" alt="너구리">
                 <ul>
                     <li>
                         <p class="name">너구리 바디 필로우_춘식이</p>
-                    </li>
+                    </li></a>
                     <li>
                         <p class="price">49,000원</p>
                     </li>
                     <li>
-                        <p class="sold">구매 13</p>
+                        <div class="sold-delivery">
+                          <p class="sold">구매 13</p><p class="delivery">무료배송</p>
+                        </div>
                     </li>
-                </ul></a>
+                </ul>
             </div>
             <div class="products">
                 <a href="https://store.kakao.com/kakaofriends/products/410145838"><img src="https://st.kakaocdn.net/shoppingstore/product/20240828180929_0b970a0a41494a3898ddf4ca4415ffb7.jpg" alt="키링">
                 <ul>
                     <li>
                         <p class="name">[태그그립] 터치 결제/교통 스마트키링 병에낀춘식이</p>
-                    </li>
+                    </li></a>
                     <li>
                         <p class="price">19,800원</p>
                     </li>
                     <li>
                         <p class="sold">구매 11</p>
                     </li>
-                </ul></a>
+                </ul>
             </div>
             <div class="products">
                 <a href="https://store.kakao.com/kakaofriends/products/410144689"><img src="https://st.kakaocdn.net/shoppingstore/product/20240828181158_97448268d73941759760c134ebf1bb45.jpg" alt="키링">
                 <ul>
                     <li>
                         <p class="name">[태그그립] 터치 결제/교통 스마트키링 봉투속춘식이</p>
-                    </li>
+                    </li></a>
                     <li>
                         <p class="price">19,800원</p>
                     </li>
                     <li>
                         <p class="sold">구매 16</p>
                     </li>
-                </ul></a>
+                </ul>
             </div>
             <div class="products">
                 <a href="https://store.kakao.com/kakaofriends/products/410143000"><img src="https://st.kakaocdn.net/shoppingstore/product/20240828181344_61a7c1ef5c1b4ecd83b99f9a4578366d.jpg" alt="키링">
                 <ul>
                     <li>
                         <p class="name">[태그그립] 카카오 춘식이 릴홀더 화이트</p>
-                    </li>
+                    </li></a>
                     <li>
                         <p class="price">5,500원</p>
                     </li>
                     <li>
                         <p class="sold">구매 44</p>
                     </li>
-                </ul></a>
+                </ul>
             </div>
             <div class="products">
                 <a href="https://store.kakao.com/kakaofriends/products/410142548"><img src="https://st.kakaocdn.net/shoppingstore/product/20240828181528_4fd6e0f12a924fbd8d630af2abdd7e19.jpg" alt="키링">
                 <ul>
                     <li>
                         <p class="name">[태그그립] 카카오 춘식이 릴홀더 블랙</p>
-                    </li>
+                    </li></a>
                     <li>
                         <p class="price">5,500원</p>
                     </li>
@@ -138,7 +147,7 @@
                     <li>
                         <p class="sold">구매 50</p>
                     </li>
-                </ul></a>
+                </ul>
             </div>
             </div>
         </div>
@@ -181,5 +190,11 @@
     searchResult.innerText = "";
   })
   
+  input.addEventListener("focus", (e)=>{
+    const target = e.target
+    console.log(e);
+    input.style.border = "solid 2px orange";
+  })
+
 </script>
 </html>
