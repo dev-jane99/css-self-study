@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/examkakao.css">
+    <link rel="stylesheet" href="./css/kakao.css">
     <link rel="icon" href="https://st.kakaocdn.net/shoppingstore/static/common/store/shopping_32x32.ico">
     <title>카카오톡 쇼핑하기</title>
     <style>
@@ -52,14 +52,15 @@
               <p class="search-message"></p>
             </div>
         <div id="banner">
-            <a href="https://store.kakao.com/kakaofriends/custom/pcms/documents/886af9bc47404363ba9df20a53ac865e?showMenu=false">
-            <img src="https://st.kakaocdn.net/shoppingstore/store/home/brand/20240826104108_9b4d230b42624a1d9fab4ef8eb899287.jpg" alt="banner"></a>
+            <a href="https://store.kakao.com/kakaofriends/custom/exhibitions/55839?showMenu=false">
+            <img src="https://st.kakaocdn.net/shoppingstore/store/home/brand/20240906102444_048259ddc09c4cc986776eb035dccc8b.jpg" alt="banner"></a>
         </div>
         <div id="content1">
             <p class="title">NEW 새로 나왔어요</p>
             <div class="innercontent">
             <div class="products">
                 <a href="https://store.kakao.com/kakaofriends/products/411147043"><img src="https://st.kakaocdn.net/shoppingstore/product/20240905102458_46a455c9fae94bdcbdfde50c1bdcac23.jpg" alt="다람쥐춘식">
+                <img class="heart" src="./image/heart.png" alt="heart">
                 <ul>
                     <li>
                         <p class="name">다람쥐 바디 필로우_춘식이</p>
@@ -76,7 +77,8 @@
             </div>
             <div class="products">
                 <a href="https://store.kakao.com/kakaofriends/products/411145861"><img src="https://st.kakaocdn.net/shoppingstore/product/20240905102854_0353671c09554742990e1492d6154d28.jpg" alt="너구리">
-                <ul>
+                <img class="heart" src="./image/heart.png" alt="heart">
+                    <ul>
                     <li>
                         <p class="name">너구리 바디 필로우_춘식이</p>
                     </li></a>
@@ -92,6 +94,7 @@
             </div>
             <div class="products">
                 <a href="https://store.kakao.com/kakaofriends/products/410145838"><img src="https://st.kakaocdn.net/shoppingstore/product/20240828180929_0b970a0a41494a3898ddf4ca4415ffb7.jpg" alt="키링">
+                <img class="heart" src="./image/heart.png" alt="heart">
                 <ul>
                     <li>
                         <p class="name">[태그그립] 터치 결제/교통 스마트키링 병에낀춘식이</p>
@@ -106,6 +109,7 @@
             </div>
             <div class="products">
                 <a href="https://store.kakao.com/kakaofriends/products/410144689"><img src="https://st.kakaocdn.net/shoppingstore/product/20240828181158_97448268d73941759760c134ebf1bb45.jpg" alt="키링">
+                <img class="heart" src="./image/heart.png" alt="heart">
                 <ul>
                     <li>
                         <p class="name">[태그그립] 터치 결제/교통 스마트키링 봉투속춘식이</p>
@@ -120,6 +124,7 @@
             </div>
             <div class="products">
                 <a href="https://store.kakao.com/kakaofriends/products/410143000"><img src="https://st.kakaocdn.net/shoppingstore/product/20240828181344_61a7c1ef5c1b4ecd83b99f9a4578366d.jpg" alt="키링">
+                <img class="heart" src="./image/heart.png" alt="heart">
                 <ul>
                     <li>
                         <p class="name">[태그그립] 카카오 춘식이 릴홀더 화이트</p>
@@ -180,9 +185,9 @@
   input.addEventListener("blur", (e)=>{
     let target = e.target;
     if(!target.value){
-      searchResult.innerText = "검색할 상품명을 입력하세요."
+      searchResult.innerText = "검색어를 입력하세요"
       searchResult.style.color = "red";
-      searchResult.style.fontSize = "12px"
+      searchResult.style.fontSize = "10px"
     }
   })
 
@@ -193,7 +198,7 @@
   input.addEventListener("focus", (e)=>{
     const target = e.target
     console.log(e);
-    input.style.border = "solid 2px orange";
+    input.style.border = "solid 1px orange";
   })
 
 </script>

@@ -117,7 +117,6 @@ input,select{vertical-align:middle}
     justify-content: left;
     gap: 33px;
     font-size: 15px;
-    /* padding: 60px 0 0 0; */
     padding: 25px 400px 15px 0;
     margin: 0 auto;
 }
@@ -125,8 +124,7 @@ input,select{vertical-align:middle}
 .search {
     display: flex;
     align-items: center;
-    /* padding: 60px 0 10px 500px;
-    margin: 0 auto; */
+    margin: 0 auto;
 }
 
 .search input {
@@ -143,6 +141,7 @@ input,select{vertical-align:middle}
   left: 1240px;
   width: 25px;
   height: 25px;
+  opacity: 50%;
 }
 
 .search-message{
@@ -171,6 +170,7 @@ input,select{vertical-align:middle}
     height: 348px;
     border-bottom: solid 10px #edf0f4;
     padding-bottom: 70px;
+    position: relative;
 }
 
 .title {
@@ -208,6 +208,17 @@ input,select{vertical-align:middle}
     filter: brightness(.97);
 }
 
+.products .heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 115px;
+    top: 170px;
+    border: solid 1px #000;
+    border-radius: 50%;
+    padding: 5px;
+}
+
 .products ul {
     list-style: none;
     font-size: 15px;
@@ -241,10 +252,10 @@ input,select{vertical-align:middle}
     align-items: center;
     border: solid 1px #edf0f4;
     background-color: #edf0f4;
-    width: 57px;
-    height: 23px;
+    width: 48px;
+    height: 20px;
     border-radius: 10%;
-    font-size: 14px;
+    font-size: 11px;
     color: #767676;
 }
 
@@ -254,10 +265,10 @@ input,select{vertical-align:middle}
   align-items: center;
   border: solid 1px #edf0f4;
   background-color: #edf0f4;
-  width: 60px;
-  height: 23px;
+  width: 48px;
+  height: 20px;
   border-radius: 10%;
-  font-size: 14px;
+  font-size: 11px;
   color: #767676;
 }
 
